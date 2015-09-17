@@ -61,5 +61,16 @@ namespace ContactUs.Web.Controllers
             return RedirectToAction("Index");
         }
 
+        public ActionResult Browse()
+        {
+            var q = from t in app.Tickets.All()
+                    orderby t.LastActivityDate descending
+                    select t;
+
+
+            var tickets = q.ToList();
+            return View(tickets);
+        }
+
     }
 }
