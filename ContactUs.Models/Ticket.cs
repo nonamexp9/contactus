@@ -10,9 +10,12 @@ namespace ContactUs.Models
     {
 
         public string Id { get; set; }
-        public int Title { get; set; }
+        public string Title { get; set; }
         public string Body { get; set; }
         public TicketStatus Status { get; set; }
+
+        public DateTime LastActivityDate { get; set; }
+        public string  LastActivityByUser { get; set; }
 
         public void Accept()
         {
