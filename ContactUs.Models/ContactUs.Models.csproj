@@ -50,6 +50,11 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Ticket.cs" />
+    <Compile Include="TicketState\AcceptedTicketStatus.cs" />
+    <Compile Include="TicketState\ClosedTicketStatus.cs" />
+    <Compile Include="TicketState\NewTicketStatus.cs" />
+    <Compile Include="TicketState\RejectedTicketStatus.cs" />
+    <Compile Include="TicketState\TicketState.cs" />
     <Compile Include="TicketStatus.cs" />
   </ItemGroup>
   <ItemGroup>
